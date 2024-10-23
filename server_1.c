@@ -131,6 +131,7 @@ int main(void)
             s, sizeof s);
         printf("server: got connection from %s \n", s);
 
+        // without this forking action, we would not be able to process multiple requests at the same time.
         if (!fork()) {  // fork for every request
             // we are in the child process now. 
             // just process the request
@@ -139,7 +140,7 @@ int main(void)
                 perror("send");
 
             sleep(15); // introduce blocking
-            if (send(new_fd, "   --->   Complete", 13, 0) == -1)
+            if (send(new_fd, "   --->   Complete", 18, 0) == -1)
                 perror("send");
             close(new_fd);
             exit(0);
