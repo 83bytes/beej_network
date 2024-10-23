@@ -8,3 +8,11 @@ RM = rm -f
 
 showip: showip.c
 	$(CC) $(CFLAGS) -o a_showip showip.c
+
+
+client_1: client_1.c
+	$(CC) $(CFLAGS) -o a_client_1 client_1.c
+
+server_1: server_1.c
+	$(CC) $(CFLAGS) -o a_server_1 server_1.c
+
