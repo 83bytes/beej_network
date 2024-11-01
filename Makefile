@@ -16,3 +16,8 @@ client_1: client_1.c
 server_1: server_1.c
 	$(CC) $(CFLAGS) -o a_server_1 server_1.c
 
+poll_1: poll_1.c
+	$(CC) $(CFLAGS) -o a_poll_1 poll_1.c
+
+pollserver: pollserver.c
+	$(CC) $(CFLAGS) -o a_pollserver pollserver.c

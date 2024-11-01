@@ -4,5 +4,6 @@
         "socket.h": "c",
         "in.h": "c",
         "inet.h": "c"
-    }
+    },
+    "C_Cpp.default.compilerPath": "/bin/gcc"
 }
