@@ -21,3 +21,9 @@ poll_1: poll_1.c
 
 pollserver: pollserver.c
 	$(CC) $(CFLAGS) -o a_pollserver pollserver.c
+
+select_1: select_1.c
+	$(CC) $(CFLAGS) -o a_select_1 select_1.c
+
+selectserver: selectserver.c
+	$(CC) $(CFLAGS) -o a_selectserver selectserver.c
